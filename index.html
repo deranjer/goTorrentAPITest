@@ -1,0 +1,215 @@
+<head>
+    <style>
+        #ServerAddressTextDisplay {
+            padding: 5px;
+            direction: ltr;
+            text-align: left;
+            position: absolute;
+            width: 304px;
+            height: 17px;
+            left: 159px;
+            top: 48px;
+        }
+    </style>
+    <style>
+        #serverResponseText {
+            padding: 5px;
+            direction: ltr;
+            text-align: left;
+            position: absolute;
+            width: 159px;
+            height: 20px;
+            left: 196px;
+            top: 301px;
+        }
+    </style>
+    <style>
+        #IsConnectedText {
+            padding: 5px;
+            direction: ltr;
+            text-align: left;
+            position: absolute;
+            width: 169px;
+            height: 14px;
+            left: 182px;
+            top: 93px;
+        }
+    </style>
+    <style>
+        #ConnectStatusText {
+            padding: 5px;
+            direction: ltr;
+            text-align: left;
+            position: absolute;
+            width: 109px;
+            height: 14px;
+            left: 40px;
+            top: 95px;
+        }
+    </style>
+    <style>
+        #sendButton {
+            border: 1px dotted gray;
+            position: absolute;
+            width: 115px;
+            height: 41px;
+            left: 461px;
+            top: 611px;
+        }
+    </style>
+    <style>
+        #serverResponse {
+            word-wrap: break-word;
+            position: absolute;
+            width: 537px;
+            height: 237px;
+            left: 25px;
+            top: 358px;
+        }
+    </style>
+    <style>
+        #ExpectsString2 {
+            padding: 5px;
+            direction: ltr;
+            text-align: left;
+            position: absolute;
+            width: 535px;
+            height: 42px;
+            left: 29px;
+            top: 242px;
+        }
+    </style>
+    <style>
+        #payloadInput {
+            position: absolute;
+            top: 212px;
+            height: 28px;
+            left: 131px;
+            width: 285px;
+        }
+    </style>
+    <style>
+        #PayloadText {
+            padding: 5px;
+            direction: ltr;
+            text-align: left;
+            position: absolute;
+            width: 86px;
+            height: 18px;
+            left: 28px;
+            top: 198px;
+        }
+    </style>
+    <style>
+        #ExpectsString1 {
+            padding: 5px;
+            direction: ltr;
+            text-align: left;
+            position: absolute;
+            width: 117px;
+            height: 19px;
+            left: 435px;
+            top: 141px;
+        }
+    </style>
+    <style>
+        #messageType {
+            position: absolute;
+            left: 132px;
+            width: 283px;
+            top: 158px;
+            height: 25px;
+        }
+    </style>
+    <style>
+        #MessageTypeText {
+            padding: 5px;
+            direction: ltr;
+            text-align: left;
+            position: absolute;
+            height: 13px;
+            left: 23px;
+            top: 142px;
+            width: 88px;
+        }
+    </style>
+    <style></style>
+    <style>
+        #paragraph12616739814 {
+            padding: 5px;
+            direction: ltr;
+            text-align: left;
+            position: absolute;
+            width: 93px;
+            height: 12px;
+            left: 435px;
+            top: 55px;
+            border: none;
+        }
+    </style>
+    <style></style>
+    <style>
+        #paragraph1261558407 {
+            padding: 5px;
+            direction: ltr;
+            position: absolute;
+            text-align: center;
+            height: 31px;
+            border: none;
+            font-size: 32px;
+            width: 295px;
+            left: 135px;
+            top: -20px;
+        }
+    </style>
+    <style>
+        #ServerAddressText {
+            padding: 5px;
+            direction: ltr;
+            text-align: left;
+            position: absolute;
+            border: none;
+            width: 101px;
+            height: 16px;
+            left: 20px;
+            top: 53px;
+        }
+    </style>
+    <style>
+        #statusText {
+            position: absolute;
+            width: 176px;
+            height: 26px;
+            left: 48px;
+            top: 607px;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>goTorrent API Tester</title>
+    <meta name="description" content="An interactive getting started guide for Brackets.">
+
+</head>
+
+<body>
+    <p id="ServerAddressText">Server Address</p>
+    <p id="ServerAddressTextDisplay">wss://yourwebsite/websocket</p>
+    <p id="paragraph1261558407">goTorrentAPI Test</p>
+    <p id="MessageTypeText">MessageType</p>
+    <input id="messageType" type="text">
+    <p id="ExpectsString1">Expects String</p>
+    <p id="PayloadText">Payload</p>
+    <input id="payloadInput" type="text">
+    <p id="ExpectsString2">Expects RAW JSON, ie {"ClientAuthString": "eyJhuuN0jcY"}</p>
+    <textarea id="serverResponse" cols="60" rows="10"></textarea>
+    <button type="button" id="sendButton">Send Message</button>
+    <p id="ConnectStatusText">Connect Status:</p>
+    <p id="IsConnectedText">Awaiting Connection</p>
+    <p id="serverResponseText">Server Response Text</p>
+    <p id="statusText">Status Text</p>
+
+    <footer>
+        <script src="communicate.js"></script>
+    </footer>
+
+</body>
